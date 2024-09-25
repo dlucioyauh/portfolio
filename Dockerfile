@@ -1,5 +1,5 @@
 # Use a imagem base do OpenJDK
-FROM openjdk:11-jre-slim
+FROM openjdk:17-jdk-slim
 
 # Defina o diretório de trabalho
 WORKDIR /app
@@ -8,4 +8,4 @@ WORKDIR /app
 COPY target/portfolio-0.0.1-SNAPSHOT.jar app.jar
 
 # Comando para executar o JAR
-ENTRYPOINT ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "app.jar"]

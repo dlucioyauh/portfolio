@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copie o arquivo JAR para o contêiner
-COPY target/portfolio-0.0.1-SNAPSHOT.jar app.jar
+COPY portfolio/target/portfolio-0.0.1-SNAPSHOT.jar app.jar
 
 # Comando para executar o JAR
 CMD ["java", "-jar", "app.jar"]

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 
     @GetMapping("/")
-    public String index() {
-        return "index"; // Este nome se refere ao arquivo index.html dentro de templates/
+    public String home() {
+        return "index"; // Vai renderizar o arquivo src/main/resources/templates/index.html
     }
 }

@@ -1,10 +1,17 @@
 # Use a imagem base do OpenJDK
 FROM openjdk:17-jdk-slim
 
-# Defina o diretório de trabalho
+# Instale o Maven
+RUN apt-get update && \
+    apt-get install -y maven && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Define o diretório de trabalho
 WORKDIR /app
 
-# Copie o arquivo JAR para o contêiner
+# Copia o JAR do aplicativo para o contêiner
 COPY target/portfolio-0.0.1-SNAPSHOT.jar app.jar
-# Comando para executar o JAR
+
+# Comando para executar o aplicativo
 CMD ["java", "-jar", "app.jar"]

@@ -10,6 +10,8 @@ RUN apt-get update && \
 # Define o diretório de trabalho
 WORKDIR /app
 
+EXPOSE 8080
+
 # Copia o JAR do aplicativo para o contêiner
 COPY target/portfolio-0.0.1-SNAPSHOT.jar app.jar
 

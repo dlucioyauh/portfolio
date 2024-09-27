@@ -77,5 +77,52 @@ footer {
 
     section {
         padding: 5px; /* Reduz ainda mais o espaçamento nas seções */
+
     }
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #f5f5f5; /* Muda a cor do texto ao passar o mouse */
+        transform: scale(1.1); /* Aumenta o tamanho do texto */
+    }
+    .hidden {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    button:active {
+        transform: scale(0.95); /* Efeito de clique */
+    }
+    nav ul li {
+        opacity: 0; /* Inicialmente invisível */
+        transform: translateY(20px); /* Deslocamento para baixo */
+        transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
+    }
+
+    nav ul li.visible {
+        opacity: 1; /* Tornar visível */
+        transform: translateY(0); /* Voltar à posição original */
+    }
+
+
 }

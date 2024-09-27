@@ -1,28 +1,82 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Portfólio - IonKod</title>
-    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Douglas Lucio</title>
 </head>
 <body>
 <header>
-    <h1>Bem-vindo ao meu Portfólio</h1>
-</header>
-<main>
-    <section>
-        <h2>Sobre mim</h2>
-        <p>Sou desenvolvedor Java e Spring Boot com foco em soluções inovadoras.</p>
-    </section>
-
-    <section>
-        <h2>Meus Projetos</h2>
+    <h1>Douglas Lucio</h1>
+    <nav>
         <ul>
-            <li>Projeto 1: Descrição do Projeto 1</li>
-            <li>Projeto 2: Descrição do Projeto 2</li>
-            <li>Projeto 3: Descrição do Projeto 3</li>
+            <li><a href="#experiencias">Experiências</a></li>
+            <li><a href="#contatos">Contatos</a></li>
+            <li><a href="#projetos">Projetos em Andamento</a></li>
         </ul>
-    </section>
-</main>
+    </nav>
+</header>
+
+<section id="sobre">
+    <img src="sua_foto.jpg" alt="Douglas Lucio">
+    <h2>Sobre Mim</h2>
+    <p>Profissional com experiência em tecnologia, focado na transição para desenvolvimento...</p>
+</section>
+
+<section id="experiencias">
+    <h2>Experiência Profissional</h2>
+    <ul>
+        <li>Analista de Service Desk na Dígitro Tecnologia...</li>
+        <li>Assistente de TI na NC8...</li>
+        <li>Programador Junior na RR Donnelley Moore...</li>
+    </ul>
+</section>
+
+<section id="educacao">
+    <h2>Educação</h2>
+    <p>CST - Universidade Cruzeiro do Sul...</p>
+</section>
+
+<section id="certificacoes">
+    <h2>Certificações</h2>
+    <ul>
+        <li>Bootcamp Nexa - Fundamentos de IA Generativa e Claude 3</li>
+        <li>Claro - Java com Spring Boot</li>
+    </ul>
+</section>
+
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+        <li>Inteligência artificial</li>
+        <li>IA generativa</li>
+        <li>AWS</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Git</li>
+        <li>GitHub</li>
+    </ul>
+</section>
+
+<section id="projetos">
+    <h2>Projetos em Andamento</h2>
+    <p>Descrição dos projetos...</p>
+</section>
+
+<section id="contatos">
+    <h2>Contatos</h2>
+    <p>Email: <a href="mailto:dlucio.douglas@gmail.com">dlucio.douglas@gmail.com</a></p>
+    <p>Telefone: 55-48996126202</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/douglaslucio">www.linkedin.com/in/douglaslucio</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Douglas Lucio</p>
+</footer>
 </body>
 </html>

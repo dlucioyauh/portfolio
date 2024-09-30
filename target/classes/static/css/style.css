@@ -1,128 +1,87 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #4a90e2, #d5006d);
-    color: white;
+    background: linear-gradient(to right, #4a90e2, #d5006d); /* Gradiente que você mencionou */
+    height: 100vh; /* Garante que o gradiente cubra toda a altura da página */
+    margin: 0; /* Remove margem padrão */
 }
 
 header {
+    background-color: #333;
+    padding: 10px 0;
     text-align: center;
-    padding: 20px;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-section {
-    padding: 20px;
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: linear-gradient(to right, #4a90e2, #d5006d); /* Gradiente que você mencionou */
+    color: white;
+    text-align: center;
 }
 
-h1, h2 {
-    color: #f5f5f5;
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens no centro */
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.presentation-title {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.presentation-desc {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.presentation-text {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.presentation-buttons a {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #61dafb;
+    color: #282c34;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
+    position: relative; /* Ajuste para ficar no final */
     width: 100%;
-}
-
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    nav ul li {
-        display: block; /* Faz com que os itens do menu fiquem em uma coluna */
-        margin: 10px 0; /* Adiciona espaçamento entre os itens */
-    }
-
-    section {
-        padding: 10px; /* Reduz o espaçamento nas seções */
-    }
-
-    h1 {
-        font-size: 1.8em; /* Ajusta o tamanho do título principal */
-    }
-
-    h2 {
-        font-size: 1.5em; /* Ajusta o tamanho dos subtítulos */
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5em; /* Tamanho do título principal em dispositivos menores */
-    }
-
-    h2 {
-        font-size: 1.2em; /* Tamanho dos subtítulos em dispositivos menores */
-    }
-
-    nav ul li {
-        margin: 5px 0; /* Reduz o espaçamento entre os itens do menu */
-    }
-
-    section {
-        padding: 5px; /* Reduz ainda mais o espaçamento nas seções */
-
-    }
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        transition: color 0.3s ease, transform 0.3s ease;
-    }
-
-    nav ul li a:hover {
-        color: #f5f5f5; /* Muda a cor do texto ao passar o mouse */
-        transform: scale(1.1); /* Aumenta o tamanho do texto */
-    }
-    .hidden {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-    }
-
-    .visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-        color: white;
-        background-color: #007BFF;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: transform 0.2s;
-    }
-
-    button:active {
-        transform: scale(0.95); /* Efeito de clique */
-    }
-    nav ul li {
-        opacity: 0; /* Inicialmente invisível */
-        transform: translateY(20px); /* Deslocamento para baixo */
-        transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
-    }
-
-    nav ul li.visible {
-        opacity: 1; /* Tornar visível */
-        transform: translateY(0); /* Voltar à posição original */
-    }
-
-
 }

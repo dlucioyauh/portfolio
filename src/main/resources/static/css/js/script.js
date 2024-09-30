@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
-    const menuItems = document.querySelectorAll('nav ul li');
+    const menuItems = document.querySelectorAll('nav ul li a');
 
     const options = {
         threshold: 0.1 // Seção deve estar 10% visível para ativar a animação
@@ -20,19 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Animação para itens do menu
-    const menuObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, options);
-
     menuItems.forEach(item => {
-        menuObserver.observe(item);
-    });
-
-    document.getElementById('myButton').addEventListener('click', () => {
-        alert('Você clicou no botão!');
+        item.addEventListener('click', () => {
+            menuItems.forEach(link => link.classList.remove('active'));
+            item.classList.add('active');
+        });
     });
 });

@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
-    const menuItems = document.querySelectorAll('nav ul li');
+    const menuItems = document.querySelectorAll('nav ul li a');
 
     const options = {
-        threshold: 0.1 // A seção deve estar 10% visível para ativar a animação
+        threshold: 0.1 // Seção deve estar 10% visível para ativar a animação
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -19,20 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-    // Animação para os itens do menu
-    const menuObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, options);
-
+    // Animação para itens do menu
     menuItems.forEach(item => {
-        menuObserver.observe(item);
-    });
-
-    document.getElementById('myButton').addEventListener('click', () => {
-        alert('Você clicou no botão!');
+        item.addEventListener('click', () => {
+            menuItems.forEach(link => link.classList.remove('active'));
+            item.classList.add('active');
+        });
     });
 });

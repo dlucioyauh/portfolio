@@ -141,7 +141,90 @@ graph TD;
     BW --> BX;
     BX --> BY;
 ```
-
+```markdow
+├── application.properties.html
+├── com
+│   ├── index.html
+│   └── ionkod
+│       ├── index.html
+│       └── portfolio
+│           ├── index.html
+│           ├── PortfolioApplication.java.html
+│           └── PortfolioApplicationTests.java.html
+├── Dockerfile
+├── HELP.md
+├── index.html
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── Procfile
+├── README.md
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── ionkod
+│   │   │           └── portfolio
+│   │   │               ├── HomeController.java
+│   │   │               └── PortfolioApplication.java
+│   │   └── resources
+│   │       ├── application.properties
+│   │       ├── static
+│   │       │   └── css
+│   │       │       ├── js
+│   │       │       │   └── script.js
+│   │       │       └── style.css
+│   │       └── templates
+│   │           ├── index.html
+│   │           └── YAUH.jpg
+│   └── test
+│       └── java
+│           └── com
+│               └── ionkod
+│                   └── portfolio
+│                       └── PortfolioApplicationTests.java
+├── static
+├── target
+│   ├── classes
+│   │   ├── application.properties
+│   │   ├── com
+│   │   │   └── ionkod
+│   │   │       └── portfolio
+│   │   │           ├── HomeController.class
+│   │   │           └── PortfolioApplication.class
+│   │   ├── static
+│   │   │   └── css
+│   │   │       └── style.css
+│   │   └── templates
+│   │       └── index.html
+│   ├── generated-sources
+│   │   └── annotations
+│   ├── generated-test-sources
+│   │   └── test-annotations
+│   ├── maven-archiver
+│   │   └── pom.properties
+│   ├── maven-status
+│   │   └── maven-compiler-plugin
+│   │       ├── compile
+│   │       │   └── default-compile
+│   │       │       ├── createdFiles.lst
+│   │       │       └── inputFiles.lst
+│   │       └── testCompile
+│   │           └── default-testCompile
+│   │               ├── createdFiles.lst
+│   │               └── inputFiles.lst
+│   ├── portfolio-0.0.1-SNAPSHOT.jar
+│   ├── portfolio-0.0.1-SNAPSHOT.jar.original
+│   ├── surefire-reports
+│   │   ├── com.ionkod.portfolio.PortfolioApplicationTests.txt
+│   │   └── TEST-com.ionkod.portfolio.PortfolioApplicationTests.xml
+│   └── test-classes
+│       └── com
+│           └── ionkod
+│               └── portfolio
+│                   └── PortfolioApplicationTests.class
+└── templates
+```
 ## Descrição dos Arquivos
 
 - **application.properties:** Configurações da aplicação.

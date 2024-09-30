@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuItems = document.querySelectorAll('nav ul li');
 
     const options = {
-        threshold: 0.1 // A seção deve estar 10% visível para ativar a animação
+        threshold: 0.1 // Seção deve estar 10% visível para ativar a animação
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-    // Animação para os itens do menu
+    // Animação para itens do menu
     const menuObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {

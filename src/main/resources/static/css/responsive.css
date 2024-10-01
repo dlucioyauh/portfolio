@@ -1,11 +1,14 @@
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+/* Estilos responsivos para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
     }
 
-    #go-top {
-        bottom: 15px;
-        right: 15px;
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
     }
 }

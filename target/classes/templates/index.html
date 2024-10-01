@@ -3,102 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio - IonKod</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Caminho do CSS -->
+    <link rel="stylesheet" href="/css/responsive.css"> <!-- Caminho do CSS responsivo -->
+    <title>IonKod - Douglas Lucio</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>IonKod</h1>
-            <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#resumo">Resumo</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-            <a href="#saiba-mais" class="btn">Saiba mais</a>
-        </div>
+        <h1>IonKod</h1>
+        <button class="menu-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#resumo">Resumo</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <img src="PERFIL.png" alt="Meu perfil">
-        <p>Sou um profissional com experiência em tecnologia, atualmente em transição para a área de desenvolvimento. Tenho habilidades em AWS IA Generativa, Git, GitHub, além de conhecimento em frameworks como Spring e Spring Boot. Estou aprendendo Java e Python e constantemente aprimorando meus conhecimentos para desenvolver soluções robustas e escaláveis. Já implantei soluções tecnológicas e ofereci suporte remoto nas companhias em que trabalhei. Meu objetivo é aprofundar minha expertise em desenvolvimento de software e contribuir para projetos inovadores na área de tecnologia.</p>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Douglas Lucio</h2>
+            <p>Desenvolvedor de Software | Java / Spring Boot</p>
+            <a href="#mais" class="btn">Saiba mais</a>
+        </div>
     </section>
 
-    <section id="resumo">
-        <h2>Resumo</h2>
-        <p>Minhas qualificações: Um pouco sobre minha trajetória no mundo da programação.</p>
-    </section>
-
-    <section id="experiencia">
-        <h2>Experiência Profissional</h2>
-        <p>Analista de Service Desk<br>
-            Dígitro Tecnologia, Florianópolis, Santa Catarina, Brasil<br>
-            dezembro de 2020 - agosto de 2024<br>
-            ● Implantação e ampliação de soluções Dígitro.<br>
-            ● Suporte remoto a clientes e técnicos credenciados.<br>
-            ● Monitoramento remoto de ambientes tecnológicos.<br>
-            ● Resolução de incidentes e registro de atendimentos.<br>
-            Assistente de TI<br>
-            NC8.CO, Florianópolis e Região, Brasil<br>
-            junho de 2018 - agosto de 2020<br>
-            ● Manutenção de infraestrutura em máquinas e redes.<br>
-            ● Gerenciamento de emails e análise de log.<br>
-            ● Suporte aos usuários da rede de computadores.<br>
-            Programador Junior<br>
-            RR Donnelley Moore, Osasco, São Paulo, Brasil<br>
-            julho de 2008 - janeiro de 2017<br>
-            ● Desenvolvimento de programas de computador com ferramenta inspire (GMC).<br>
-            ● Testes e ajustes de programas de computadores.<br>
-            ● Monitoramento e análise de processos produtivos.<br>
-            Educação:<br>
-            Curso Superior de Tecnologia (CST)<br>
-            Universidade Cruzeiro do Sul, dezembro de 2024<br>
-            Certificações:<br>
-            ● Bootcamp Nexa - Fundamentos de IA Generativa e Claude 3<br>
-            ● Claro - Java com Spring Boot
-        </p>
-    </section>
-
-    <section id="skills">
-        <h2>Habilidades</h2>
-        <p>● Inteligência artificial<br>
-            ● IA generativa<br>
-            ● AWS<br>
-            ● Python<br>
-            ● Java<br>
-            ● Spring Boot<br>
-            ● JavaScript<br>
-            ● HTML<br>
-            ● CSS<br>
-            ● Git<br>
-            ● GitHub<br>
-            ● Docker
-        </p>
-    </section>
-
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Para mais informações, entre em contato através do e-mail: seuemail@exemplo.com</p>
-    </section>
+    <main>
+        <!-- Conteúdo das seções -->
+        <section id="sobre">
+            <h3>Sobre</h3>
+            <p>Conteúdo sobre você.</p>
+        </section>
+        <section id="resumo">
+            <h3>Resumo</h3>
+            <p>Resumo da sua carreira.</p>
+        </section>
+        <section id="experiencia">
+            <h3>Experiência</h3>
+            <p>Detalhes sobre sua experiência profissional.</p>
+        </section>
+        <section id="habilidades">
+            <h3>Habilidades</h3>
+            <div class="skills-container">
+                <div class="skill">
+                    <img src="/img/artificial-intelligence.png" alt="Inteligência Artificial">
+                    <p>Inteligência Artificial</p>
+                </div>
+                <div class="skill">
+                    <img src="/img/machine_learn.png" alt="IA Generativa">
+                    <p>IA Generativa</p>
+                </div>
+                <div class="skill">
+                    <img src="/img/AWS.png" alt="AWS">
+                    <p>AWS</p>
+                </div>
+                <div class="skill">
+                    <img src="/img/python.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill">
+                    <img src="/img/java.png" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="skill">
+                    <img src="/img/SpringBoot.png" alt="Spring Boot">
+                    <p>Spring Boot</p>
+                </div>
+                <div class="skill">
+                    <img src="/img/java-script.png" alt="JavaScript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill">
+                    <img src="/img/html-5.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill">
+                    <img src="/img/css.png" alt="CSS">
+                    <p>CSS</p>
+                </div>
+                <div class="skill">
+                    <img src="/img/git.png" alt="Git">
+                    <p>Git</p>
+                </div>
+                <div class="skill">
+                    <img src="/img/github.png" alt="GitHub">
+                    <p>GitHub</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="contato">
+            <h3>Contato</h3>
+            <p>Informações de contato.</p>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <p>© Todos os Direitos Reservados - IonKod.</p>
-        </div>
+        <p>&copy; 2024 IonKod. Todos os direitos reservados.</p>
     </footer>
 
-    <div id="go-top">
-        <a class="smoothscroll" title="Voltar ao início" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-    </div>
-
-    <script src="js/script.js"></script>
+    <script src="/css/js/script.js"></script> <!-- Caminho do JavaScript -->
 </body>
 </html>

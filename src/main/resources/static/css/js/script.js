@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     const menuItems = document.querySelectorAll('nav ul li a');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav ul');
+    const goTopButton = document.getElementById("go-top");
 
     const options = {
         threshold: 0.1 // Seção deve estar 10% visível para ativar a animação
@@ -30,9 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Funcionalidade do botão do menu
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav ul');
-
     menuToggle.addEventListener('click', () => {
         nav.classList.toggle('show'); // Alterna a classe 'show' para mostrar/esconder o menu
     });
@@ -46,11 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
             targetSection.scrollIntoView({
                 behavior: 'smooth'
             });
+            nav.classList.remove('show'); // Fecha o menu após clicar em um item no mobile
         });
     });
 
     // Exibir botão "Voltar ao topo"
-    const goTopButton = document.getElementById("go-top");
     window.addEventListener("scroll", () => {
         if (window.scrollY > 200) {
             goTopButton.style.display = "block";

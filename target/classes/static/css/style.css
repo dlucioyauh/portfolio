@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(90deg, #5de0e6, #004aad, #004aad, #afd4c3, #afd4c3); /* Fundo gradiente em todo o site */
+    background: linear-gradient(90deg, #5de0e6, #004bad7e, #004aad, #afd4c3, #afd4c3); /* Fundo gradiente em todo o site */
     color: #ffffff; /* Cor do texto padrão */
 }
 
@@ -14,7 +14,7 @@ body {
 
 header {
     background: rgba(0, 74, 173, 0.8); /* Cor do fundo do cabeçalho com um pouco de transparência */
-    color: #ffffff;
+    color: #111313;
     padding: 20px 0;
 }
 
@@ -26,14 +26,14 @@ header h1 {
     display: none;
     background: none;
     border: none;
-    color: #ffffff;
+    color: #111313;
     font-size: 24px;
     cursor: pointer;
 }
 
 nav {
     display: flex;
-    background: rgba(0, 74, 173, 0.9); /* Cor do fundo do menu com um pouco de transparência */
+    background: rgba(14, 62, 124, 0.9); /* Cor do fundo do menu com um pouco de transparência */
 }
 
 nav ul {
@@ -48,17 +48,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #111313;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #f4f4f4;
+    color: #096885;
 }
 
 .btn {
-    background: #e8491d;
+    background: #8a4ef8;
     color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;

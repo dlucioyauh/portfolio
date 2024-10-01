@@ -1,94 +1,147 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #4a90e2, #afd4c3); /* Gradiente */
-    height: 100vh; /* Garante que o gradiente cubra toda a altura da página */
-    margin: 0; /* Remove margem padrão */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(90deg, #5de0e6, #004aad, #004aad, #afd4c3, #afd4c3); /* Fundo gradiente em todo o site */
+    color: #ffffff; /* Cor do texto padrão */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
 header {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
+    background: rgba(0, 74, 173, 0.8); /* Cor do fundo do cabeçalho com um pouco de transparência */
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    background: rgba(0, 74, 173, 0.9); /* Cor do fundo do menu com um pouco de transparência */
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
 }
 
-
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: linear-gradient(to right, #4a90e2, #afd4c3); /* Gradiente*/
-    color: white;
-    text-align: center;
+nav ul li a:hover {
+    color: #f4f4f4;
 }
 
-.profile-section {
-    display: flex;
-    justify-content: space-between; /* Adiciona espaço entre os elementos */
-    align-items: center; /* Alinha verticalmente os itens ao centro */
-    padding: 20px;
-}
-
-.profile-image {
-    width: 150px; /* Define o tamanho da imagem */
-    height: auto; /* Mantém a proporção */
-    margin-right: 20px; /* Espaço entre a imagem e o texto */
-    object-fit: cover;
-    border-radius: 50%; /* Faz a imagem ficar circular */
-}
-
-
-.presentation-title {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-.presentation-desc {
-    font-size: 1.5rem;
-    margin: 10px 0;
-}
-
-.presentation-text {
-    margin: 20px 0;
-    font-size: 1.2rem;
-}
-
-.presentation-buttons a {
-    margin: 10px;
+.btn {
+    background: #e8491d;
+    color: #ffffff;
     padding: 10px 20px;
-    background-color: #61dafb;
-    color: #282c34;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #35424a;
+}
+
+section {
+    background: transparent; /* Torna a seção transparente para usar o fundo do gradiente */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: none; /* Remove a sombra para não interferir no gradiente */
 }
 
 footer {
-    background-image: url('/static/TARJA.png'); /* Insere a tarja como fundo */
-    background-size: cover; /* Faz a imagem cobrir todo o footer */
-    background-position: center;
-    color: white;
+    background: rgba(0, 74, 173, 0.8); /* Cor do fundo do rodapé com um pouco de transparência */
+    color: #ffffff;
     text-align: center;
-    padding: 20px;
-    position: relative;
-    width: 100%;
+    padding: 10px 0;
 }
 
+#go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+#go-top a {
+    color: #ffffff;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.invisible {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Estilo para a imagem de perfil */
+#sobre img {
+    max-width: 200px; /* Ajuste este valor conforme necessário */
+    width: 100%; /* Faz a imagem se adaptar ao tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Faz a imagem ficar em forma de círculo, se desejado */
+    display: block; /* Para garantir que a imagem tenha um espaço correto ao lado de textos */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+/* Media queries para dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none; /* Esconde o menu por padrão */
+        position: absolute;
+        top: 60px; /* Ajuste conforme necessário */
+        left: 0;
+        background: #35424a;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex; /* Mostra o menu quando a classe "show" é adicionada */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Ajuste o espaçamento dos itens do menu */
+    }
+}

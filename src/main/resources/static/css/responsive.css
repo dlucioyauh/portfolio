@@ -1,11 +1,11 @@
-@media (max-width: 768px) {
-    .presentation-title {
-        font-size: 2rem;
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
     }
-    .presentation-desc {
-        font-size: 1.2rem;
-    }
-    .presentation-text {
-        font-size: 1rem;
+
+    #go-top {
+        bottom: 15px;
+        right: 15px;
     }
 }

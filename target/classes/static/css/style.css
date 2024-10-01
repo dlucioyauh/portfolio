@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #4a90e2, #d5006d); /* Gradiente que você mencionou */
+    background: linear-gradient(to right, #4a90e2, #afd4c3); /* Gradiente */
     height: 100vh; /* Garante que o gradiente cubra toda a altura da página */
     margin: 0; /* Remove margem padrão */
 }
@@ -17,6 +17,7 @@ nav ul {
     list-style: none;
     padding: 0;
 }
+
 
 nav ul li {
     display: inline;
@@ -34,23 +35,26 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: linear-gradient(to right, #4a90e2, #d5006d); /* Gradiente que você mencionou */
+    background-color: linear-gradient(to right, #4a90e2, #afd4c3); /* Gradiente*/
     color: white;
     text-align: center;
 }
 
 .profile-section {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Alinha os itens no centro */
+    justify-content: space-between; /* Adiciona espaço entre os elementos */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    padding: 20px;
 }
 
 .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px; /* Espaço abaixo da imagem */
+    width: 150px; /* Define o tamanho da imagem */
+    height: auto; /* Mantém a proporção */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+    object-fit: cover;
+    border-radius: 50%; /* Faz a imagem ficar circular */
 }
+
 
 .presentation-title {
     font-size: 2.5rem;
@@ -78,10 +82,13 @@ nav ul li a {
 }
 
 footer {
-    background-color: #333;
+    background-image: url('/static/TARJA.png'); /* Insere a tarja como fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o footer */
+    background-position: center;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative; /* Ajuste para ficar no final */
+    padding: 20px;
+    position: relative;
     width: 100%;
 }
+

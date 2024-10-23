@@ -1,164 +1,55 @@
-# Bem-vindo ao IonKod Portfolio
 
-Este projeto é um portfólio desenvolvido em Java e Spring Boot, demonstrando as habilidades e experiências do desenvolvedor.
+---
+
+# IonKod Portfolio
+
+Este é o projeto de portfólio pessoal do desenvolvedor Douglas Lucio, criado com Java e Spring Boot. O objetivo deste projeto é apresentar as habilidades técnicas, experiências profissionais e projetos desenvolvidos. O portfólio foi desenhado para ser moderno, responsivo e funcional, destacando o que Douglas pode oferecer como Full-Stack Developer.
+
+## Funcionalidades
+
+- **Página de Apresentação**: Uma visão geral sobre o desenvolvedor, com uma breve descrição e habilidades principais.
+- **Seção de Projetos**: Apresenta projetos anteriores desenvolvidos por Douglas Lucio, com descrições e tecnologias utilizadas.
+- **Experiência Profissional**: Um histórico das experiências de trabalho do desenvolvedor.
+- **Design Responsivo**: Interface que se adapta a diferentes dispositivos, como desktops, tablets e smartphones.
+
+## Tecnologias Utilizadas
+
+- **Java**: Linguagem principal para o desenvolvimento backend.
+- **Spring Boot**: Framework para criação de aplicações web robustas e escaláveis.
+- **HTML5 e CSS3**: Tecnologias para construção da interface do usuário.
+- **JavaScript**: Utilizado para interatividade na página.
+- **Thymeleaf**: Template engine para renderizar páginas HTML no lado do servidor.
+- **Maven**: Gerenciador de dependências e automação de build.
+- **Docker**: Para containerização da aplicação, facilitando o deploy em diferentes ambientes.
 
 ## Estrutura do Projeto
 
 ```mermaid
 graph TD;
-    A[application.properties.html]
-    B[com]
+    A[application.properties]
+    B[com.ionkod.portfolio]
     C[index.html]
-    D[ionkod]
-    E[index.html]
-    F[portfolio]
-    G[index.html]
-    H[PortfolioApplication.java.html]
-    I[PortfolioApplicationTests.java.html]
-    J[Dockerfile]
-    K[HELP.md]
-    L[index.html]
-    M[mvnw]
-    N[mvnw.cmd]
-    O[pom.xml]
-    P[Procfile]
-    Q[src]
-    R[main]
-    S[java]
-    T[com]
-    U[ionkod]
-    V[portfolio]
-    W[HomeController.java]
-    X[PortfolioApplication.java]
-    Y[resources]
-    Z[application.properties]
-    AA[static]
-    AB[css]
-    AC[style.css]
-    AD[templates]
-    AE[index.html]
-    AF[test]
-    AG[java]
-    AH[com]
-    AI[ionkod]
-    AJ[portfolio]
-    AK[PortfolioApplicationTests.java]
-    AL[static]
-    AM[target]
-    AN[classes]
-    AO[application.properties]
-    AP[com]
-    AQ[ionkod]
-    AR[portfolio]
-    AS[HomeController.class]
-    AT[PortfolioApplication.class]
-    AU[static]
-    AV[css]
-    AW[style.css]
-    AX[templates]
-    AY[index.html]
-    AZ[generated-sources]
-    BA[annotations]
-    BB[generated-test-sources]
-    BC[test-annotations]
-    BD[maven-archiver]
-    BE[pom.properties]
-    BF[maven-status]
-    BG[maven-compiler-plugin]
-    BH[compile]
-    BI[default-compile]
-    BJ[createdFiles.lst]
-    BK[inputFiles.lst]
-    BL[testCompile]
-    BM[default-testCompile]
-    BN[createdFiles.lst]
-    BO[inputFiles.lst]
-    BP[portfolio-0.0.1-SNAPSHOT.jar]
-    BQ[portfolio-0.0.1-SNAPSHOT.jar.original]
-    BR[surefire-reports]
-    BS[com.ionkod.portfolio.PortfolioApplicationTests.txt]
-    BT[TEST-com.ionkod.portfolio.PortfolioApplicationTests.xml]
-    BU[test-classes]
-    BV[com]
-    BW[ionkod]
-    BX[portfolio]
-    BY[PortfolioApplicationTests.class]
-    B --> C;
-    B --> D;
-    B --> J;
-    B --> K;
-    B --> L;
-    B --> M;
-    B --> N;
-    B --> O;
-    B --> P;
-    B --> Q;
-    Q --> R;
-    R --> S;
-    S --> T;
-    T --> U;
-    U --> V;
-    V --> W;
-    V --> X;
-    Y --> Z;
-    Y --> AA;
-    Y --> AB;
-    AA --> AC;
-    Q --> AF;
-    AF --> AG;
-    AG --> AH;
-    AH --> AI;
-    AI --> AJ;
-    AJ --> AK;
-    AM --> AN;
-    AN --> AO;
-    AO --> AP;
-    AP --> AQ;
-    AQ --> AR;
-    AR --> AS;
-    AN --> AU;
-    AU --> AV;
-    AV --> AW;
-    AX --> AY;
-    AZ --> BA;
-    BA --> BB;
-    AZ --> BD;
-    BD --> BE;
-    BE --> BF;
-    BF --> BG;
-    BG --> BH;
-    BH --> BI;
-    BI --> BJ;
-    BI --> BK;
-    BJ --> BL;
-    BM --> BN;
-    BO --> BP;
-    BQ --> BR;
-    BR --> BS;
-    BR --> BT;
-    BU --> BV;
-    BV --> BW;
-    BW --> BX;
-    BX --> BY;
+    D[static/css/style.css]
+    E[HomeController.java]
+    F[PortfolioApplication.java]
+    G[Dockerfile]
+    H[README.md]
+    I[pom.xml]
+    J[src/main]
+    K[src/test]
+    L[target]
+    
+    J --> A
+    J --> B
+    B --> E
+    B --> F
+    L --> D
+    K --> E
 ```
-```markdow
-├── application.properties.html
-├── com
-│   ├── index.html
-│   └── ionkod
-│       ├── index.html
-│       └── portfolio
-│           ├── index.html
-│           ├── PortfolioApplication.java.html
-│           └── PortfolioApplicationTests.java.html
-├── Dockerfile
-├── HELP.md
-├── index.html
-├── mvnw
-├── mvnw.cmd
-├── pom.xml
-├── Procfile
-├── README.md
+
+## Estrutura de Diretórios
+
+```markdown
 ├── src
 │   ├── main
 │   │   ├── java
@@ -171,8 +62,6 @@ graph TD;
 │   │       ├── application.properties
 │   │       ├── static
 │   │       │   └── css
-│   │       │       ├── js
-│   │       │       │   └── script.js
 │   │       │       └── style.css
 │   │       └── templates
 │   │           ├── index.html
@@ -183,58 +72,42 @@ graph TD;
 │               └── ionkod
 │                   └── portfolio
 │                       └── PortfolioApplicationTests.java
-├── static
-├── target
-│   ├── classes
-│   │   ├── application.properties
-│   │   ├── com
-│   │   │   └── ionkod
-│   │   │       └── portfolio
-│   │   │           ├── HomeController.class
-│   │   │           └── PortfolioApplication.class
-│   │   ├── static
-│   │   │   └── css
-│   │   │       └── style.css
-│   │   └── templates
-│   │       └── index.html
-│   ├── generated-sources
-│   │   └── annotations
-│   ├── generated-test-sources
-│   │   └── test-annotations
-│   ├── maven-archiver
-│   │   └── pom.properties
-│   ├── maven-status
-│   │   └── maven-compiler-plugin
-│   │       ├── compile
-│   │       │   └── default-compile
-│   │       │       ├── createdFiles.lst
-│   │       │       └── inputFiles.lst
-│   │       └── testCompile
-│   │           └── default-testCompile
-│   │               ├── createdFiles.lst
-│   │               └── inputFiles.lst
-│   ├── portfolio-0.0.1-SNAPSHOT.jar
-│   ├── portfolio-0.0.1-SNAPSHOT.jar.original
-│   ├── surefire-reports
-│   │   ├── com.ionkod.portfolio.PortfolioApplicationTests.txt
-│   │   └── TEST-com.ionkod.portfolio.PortfolioApplicationTests.xml
-│   └── test-classes
-│       └── com
-│           └── ionkod
-│               └── portfolio
-│                   └── PortfolioApplicationTests.class
-└── templates
+├── Dockerfile
+├── README.md
+├── pom.xml
 ```
-## Descrição dos Arquivos
 
-- **application.properties:** Configurações da aplicação.
-- **Dockerfile:** Configuração para construção da imagem Docker.
-- **pom.xml:** Gerenciamento de dependências do projeto Maven.
-- **src/main/java:** Contém a lógica de negócios da aplicação.
-- **src/main/resources:** Arquivos estáticos e templates da aplicação.
-- **HELP.md:** Documentação de ajuda.
+## Descrição dos Principais Arquivos
+
+- **application.properties**: Configurações de ambiente da aplicação, como portas e banco de dados.
+- **HomeController.java**: Controlador responsável por lidar com requisições HTTP e direcionar para as views adequadas.
+- **PortfolioApplication.java**: Classe principal que inicializa o Spring Boot.
+- **index.html**: Template da página principal do portfólio.
+- **style.css**: Estilos CSS utilizados na personalização da interface do usuário.
+- **Dockerfile**: Arquivo que descreve como a aplicação deve ser containerizada no Docker.
+- **pom.xml**: Arquivo de configuração do Maven para gerenciar dependências e processos de build.
+
+## Como Executar o Projeto
+
+1. **Pré-requisitos**:
+   - Java 17+
+   - Maven
+   - Docker (opcional para execução em contêiner)
+
+2. **Passos para executar**:
+   - Clone este repositório.
+   - Execute `mvn clean install` para baixar as dependências e compilar o projeto.
+   - Use `mvn spring-boot:run` para rodar a aplicação localmente.
+   - Acesse `http://localhost:8080` no navegador.
+   - link do site online no Render `https://www.ionkod.com`
+
+## `Autor`
+
+Douglas Lucio - [GitHub](https://github.com/dlucioyauh)
 
 ---
 
 &copy; 2024 IonKod. Todos os direitos reservados.
+
+---
 
